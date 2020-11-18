@@ -49,8 +49,8 @@ while (cicleContinue == "Y") {
     listaCognomi.sort();
   }
 
-    //Salva la posizione dell'ultimo cognome inserito all'interno della lista
-    var posizioneCognome = listaCognomi.lastIndexOf(nuovoCognome);
+    //Salva la posizione dell'ultimo cognome inserito all'interno della lista, partendo da 1
+    var posizioneCognome = listaCognomi.lastIndexOf(nuovoCognome) + 1;
 
     //Mostra il cognome e la posizione nella lista all'interno della pagina
     document.getElementById("cognome").innerHTML = nuovoCognome;
