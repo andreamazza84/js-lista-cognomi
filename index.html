@@ -17,18 +17,37 @@
       color: white;
       text-align: center;
     }
-    ul{}
-
     h1{
       font-size: 20px;
       text-transform: uppercase;
+    }
+    .row{
+      display: flex;
+      width: 40%;
+      height: 40px;
+      margin: auto;
+    }
+    .col{
+      display: flex;
+      width: 50%;
+      height: 100%;
+      border: 1px solid white;
+      justify-content: center;
+      align-items: center;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Persone presenti nella lista</h1>
-
+    <div class="row">
+      <div class="col">Posizione nella lista</div>
+      <div class="col">Cognome</div>
+    </div>
+    <div class="row">
+      <div class="col" id="posizione">#</div>
+      <div class="col" id="cognome">...</div>
+    </div>
   </div>
 
 
