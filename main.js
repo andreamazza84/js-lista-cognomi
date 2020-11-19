@@ -27,7 +27,7 @@ while (cicleContinue == "Y") {
   var nuovoCognome = prompt("Inserisci qui il tuo cognome");
 
   //Fa sì che il cognome inserito abbia sempre la prima lettera maiuscola.
-  nuovoCognome = nuovoCognome.charAt(0).toUpperCase() + nuovoCognome.slice(1);
+  nuovoCognome = nuovoCognome.charAt(0).toUpperCase() + nuovoCognome.slice(1).toLowerCase();
 
   //Controllo della presenza del congnome inserito nella lista
   var controlloCognome = "";
